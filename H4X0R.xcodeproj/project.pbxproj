@@ -13,6 +13,10 @@
 		7ABD31B22512889F001CEB2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ABD31B12512889F001CEB2C /* Assets.xcassets */; };
 		7ABD31B52512889F001CEB2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ABD31B42512889F001CEB2C /* Preview Assets.xcassets */; };
 		7ABD31B82512889F001CEB2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ABD31B62512889F001CEB2C /* LaunchScreen.storyboard */; };
+		7ABD31C125128A4C001CEB2C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABD31C025128A4C001CEB2C /* NetworkManager.swift */; };
+		7ABD31C325128B32001CEB2C /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABD31C225128B32001CEB2C /* PostData.swift */; };
+		7ABD31C625129020001CEB2C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABD31C525129020001CEB2C /* DetailView.swift */; };
+		7ABD31C825129385001CEB2C /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABD31C725129385001CEB2C /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		7ABD31B42512889F001CEB2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7ABD31B72512889F001CEB2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7ABD31B92512889F001CEB2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ABD31C025128A4C001CEB2C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7ABD31C225128B32001CEB2C /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		7ABD31C525129020001CEB2C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		7ABD31C725129385001CEB2C /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +66,9 @@
 			children = (
 				7ABD31AB2512889E001CEB2C /* AppDelegate.swift */,
 				7ABD31AD2512889E001CEB2C /* SceneDelegate.swift */,
-				7ABD31AF2512889E001CEB2C /* ContentView.swift */,
+				7ABD31C425129012001CEB2C /* Views */,
 				7ABD31B12512889F001CEB2C /* Assets.xcassets */,
+				7ABD31BF25128A2F001CEB2C /* Models */,
 				7ABD31B62512889F001CEB2C /* LaunchScreen.storyboard */,
 				7ABD31B92512889F001CEB2C /* Info.plist */,
 				7ABD31B32512889F001CEB2C /* Preview Content */,
@@ -73,6 +82,25 @@
 				7ABD31B42512889F001CEB2C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7ABD31BF25128A2F001CEB2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7ABD31C025128A4C001CEB2C /* NetworkManager.swift */,
+				7ABD31C225128B32001CEB2C /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7ABD31C425129012001CEB2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7ABD31AF2512889E001CEB2C /* ContentView.swift */,
+				7ABD31C525129020001CEB2C /* DetailView.swift */,
+				7ABD31C725129385001CEB2C /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ABD31C325128B32001CEB2C /* PostData.swift in Sources */,
+				7ABD31C625129020001CEB2C /* DetailView.swift in Sources */,
+				7ABD31C125128A4C001CEB2C /* NetworkManager.swift in Sources */,
 				7ABD31AC2512889E001CEB2C /* AppDelegate.swift in Sources */,
 				7ABD31AE2512889E001CEB2C /* SceneDelegate.swift in Sources */,
 				7ABD31B02512889E001CEB2C /* ContentView.swift in Sources */,
+				7ABD31C825129385001CEB2C /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
